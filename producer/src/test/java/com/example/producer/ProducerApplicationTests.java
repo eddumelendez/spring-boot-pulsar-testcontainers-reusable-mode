@@ -23,7 +23,7 @@ public class ProducerApplicationTests {
 		@ServiceConnection
 		@RestartScope
 		PulsarContainer pulsarContainer() {
-			return new PulsarContainer(DockerImageName.parse("apachepulsar/pulsar:2.11.0"))
+			return new PulsarContainer(DockerImageName.parse("apachepulsar/pulsar:3.1.0"))
 					.withReuse(true);
 		}
 
